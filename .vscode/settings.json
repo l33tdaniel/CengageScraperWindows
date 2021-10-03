@@ -1,0 +1,12 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "libraries/byte-buddy-1.8.15.jar",
+        "libraries/client-combined-3.141.59-sources.jar",
+        "libraries/client-combined-3.141.59.jar",
+        "libraries/commons-exec-1.3.jar",
+        "libraries/guava-25.0-jre.jar",
+        "libraries/okhttp-3.11.0.jar",
+        "libraries/okio-1.14.0.jar"
+    ]
+}
