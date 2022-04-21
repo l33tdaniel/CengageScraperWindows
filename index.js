@@ -26,15 +26,15 @@ io.on('connection', (socket) => {
   });
 });
 
-io.sockets.on('connection', function (socket) {
-  var address = socket.handshake.address;
-  console.log('New connection from ' + address.address + ':' + address.port);
-});
+
 
 // this is saying on a connection to the socket
 io.on('connection', (socket) => {
   // listening for a chat message 
+  console.log(socket.handshake.time);
   socket.on('chat message', (msg) => {
+    // this logs the socket
+    console.log(socket.handshake.address);
     // this is logging it to console
     console.log('message: ' + msg);
   });
@@ -45,3 +45,5 @@ io.on('connection', (socket) => {
 http.listen(port, () => {
   console.log(`Socket.IO server running at http://localhost:${port}/`);
 });
+
+// jack is super cool
